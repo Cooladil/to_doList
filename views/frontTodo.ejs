@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>To Do List with ejs!</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/css/frontTodo.css" type="text/css" >
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body><div class="container" id="editing">
+	<div id="head" class="header">
+		<center><h2>My To Do list</h2></center>
+	<form action="/" method="POST" autocomplete="off">
+		<center><input type = "text" id = "txt" placeholder="Enter your task" name = "task"/>
+		<input type="submit" value="Add" class="btn" id="bn" autocomplete="off"></center>
+	</form></div>
+	<center>
+	<div id="haha">
+	<ul class="myList">
+		<%todoTasks.forEach(i => {%>		
+		<li class="myListItem">
+			<div class="myListItemName"><%= i.task%>
+			<a class="edit" href="/edit/<%= i._id%>"><span class="fas fa-edit"></span></a>
+			<a class="delete" href="/remove/<%= i._id%>"><span class="fas fa-times"></span></a>
+		</div>
+		</li><%})%>
+	</ul>
+	</div></center>
+	<p id="p"></p>
+	</div>
+</body>

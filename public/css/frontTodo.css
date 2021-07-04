@@ -1,0 +1,98 @@
+body{
+	background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1092571024%2F960x0.jpg%3Ffit%3Dscale");
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: -1;
+	background-size: cover;
+}
+ul li{
+	list-style-type: none;
+	font-family: 'Forte';
+	font-size: 20px;
+	margin: 12px;
+	background-color: rgb(240, 240, 240);
+	width: 452.5px;
+	margin-left: -26px;
+	padding-left: 15px;
+	border-radius: 20px;
+	cursor: pointer;
+	text-align: left;
+}
+ul li:hover{
+	background-color: rgb(134, 166, 201);
+}
+#haha{
+	overflow: auto;
+	height: 210px;
+	margin-top: -2px;
+}
+#haha::-webkit-scrollbar {
+	display: none;
+}
+.header{
+	font-family: 'Showcard Gothic';
+	margin: 10px;
+	margin-top: 30px;
+}
+#editing{
+	box-shadow: 20px 20px 30px rgb(0, 0, 0);
+	margin-top: 40px;
+	padding-top: 20px;
+	border-radius: 20px;
+	height: 400px;
+	width: 650px;
+	background: rgb(160, 205, 223);
+}
+#txt{
+	position: relative;
+	font-family: 'Times New Roman';
+	font-size: 18px;
+	text-align: initial;
+	padding-left: 10px;
+	width: 400px;
+	height: 35px;
+	border-radius: 20px;
+	outline: none;
+	border: 2px solid rgb(95, 95, 95);
+	z-index: 1;
+}
+.btn{
+	background-color: rgb(151, 151, 151);
+}
+#bn{
+	border-radius: 20px;
+	margin-left: -50px;
+	padding-left: 50px;
+	outline: none;
+	padding-bottom: 6.7px;
+}
+#bn:hover{
+	background-color: rgb(80, 80, 80);
+	color: rgb(224, 224, 224);
+}
+.fa-times{
+	position: absolute;
+	padding: 6px 8px 6px 8px;
+	right: 1px;
+	bottom: -3px;
+}
+.fa-times:hover{
+	color: rgb(236, 96, 96);
+}
+.fa-edit{
+	position: absolute;
+	right: 20px;
+	bottom: -2px;
+	padding: 6px 8px 6px 8px;
+}
+.fa-edit:hover{
+	color: rgb(0, 255, 0);
+}
+.myListItemName{
+	position: relative;
+}
+p{
+	color: red;
+	margin-left: 20px;
+	margin-top: 7px
+}
